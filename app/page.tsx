@@ -3,6 +3,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import AttributeSection from "@/components/sections/AttibuteSection";
 import Hero from "@/components/sections/HeroSection";
 import SliderSection from "@/components/sections/SliderSection";
+import VideoSection from "@/components/sections/VideoSection";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AttributeSection/>
       <AboutSection/>
       <SliderSection/>
+      <VideoSection/>
     </main>
   );
 }
