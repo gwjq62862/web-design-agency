@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
+import AttributeSection from "@/components/sections/AttibuteSection";
 import Hero from "@/components/sections/HeroSection";
 import Image from "next/image";
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Navbar />
       </div>
       <Hero />
+      <AttributeSection/>
     </main>
   );
 }
