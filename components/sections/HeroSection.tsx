@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../ui/button";
 
 const Hero = () => {
     return (
@@ -12,9 +13,7 @@ const Hero = () => {
                         More than just  a design agency
                     </h1>
                     <div className="mt-10">
-                        <button className="bg-primary text-white font-bold uppercase  px-[50px] py-[22px] rounded-none hover:bg-white hover:text-primary transition-colors duration-300">
-                            Discover More
-                        </button>
+                       <Button  text="Discover More"/>
                     </div>
                 </div>
 
