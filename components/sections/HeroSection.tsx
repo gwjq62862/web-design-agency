@@ -3,7 +3,7 @@ import Button from "../ui/button";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen bg-black text-white">
+        <section className="relative w-full h-screen bg-dark-bg text-white">
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] h-full items-center">
 

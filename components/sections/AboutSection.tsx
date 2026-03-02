@@ -3,7 +3,7 @@ import Button from "../ui/button"
 
 const AboutSection = () => {
   return (
-    <section className='px-10 lg:px-[80px] py-[100px] bg-black overflow-hidden'>
+    <section className='px-10 lg:px-[80px] py-[100px] bg-dark-bg overflow-hidden'>
       <div className='flex flex-col lg:flex-row items-center justify-between gap-[60px] lg:gap-[130px]'>
 
 

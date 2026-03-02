@@ -3,7 +3,7 @@ import React from 'react'
 
 const VideoSection = () => {
   return (
-    <section className='px-5 lg:px-[80px] py-[60px] bg-black flex justify-center'>
+    <section className='px-5 lg:px-[80px] py-[60px] bg-dark-bg flex justify-center'>
       <div className='relative w-full max-w-[1280px] aspect-1280/560 overflow-hidden group'>
     
         <Image 

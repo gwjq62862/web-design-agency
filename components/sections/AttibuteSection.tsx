@@ -22,7 +22,7 @@ const attributes = [
 
 const AttributeSection = () => {
   return (
-    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[80px] bg-black'>
+    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[80px] bg-dark-bg'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] justify-items-center'>
         {attributes.map((attr, index) => (
           <AttributeCard
