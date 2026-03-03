@@ -5,7 +5,7 @@ const TestimonialSection = () => {
   return (
     <section className="py-[100px] px-5 lg:px-[80px] bg-dark-bg relative overflow-hidden">
 
-      <div className="absolute inset-0 z-0 opacity-50">
+      <div className="absolute inset-0 z-0 ">
         <Image
           src='/bg-testimonial.png'
           fill

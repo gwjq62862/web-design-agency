@@ -25,7 +25,7 @@ const blogPosts = [
 
 const BlogSection = () => {
     return (
-        <section className='py-[100px] px-5 lg:px-[80px] bg-black'>
+        <section className='py-[100px] px-5 lg:px-[80px] bg-dark-bg'>
             <div className='flex flex-col items-center mb-[60px]'>
                 <div className='w-[8px] h-[8px] bg-primary rounded-full mb-[16px]'></div>
                 <span className='uppercase text-gray text-[14px] font-medium tracking-[2px] mb-[8px]'>
