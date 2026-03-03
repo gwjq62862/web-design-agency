@@ -4,6 +4,7 @@ import AttributeSection from "@/components/sections/AttibuteSection";
 import Hero from "@/components/sections/HeroSection";
 import ServiceSection from "@/components/sections/ServiceSection";
 import SliderSection from "@/components/sections/SliderSection";
+import TestimonialSection from "@/components/sections/TestimonialSection";
 import VideoSection from "@/components/sections/VideoSection";
 import Image from "next/image";
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <SliderSection/>
       <VideoSection/>
       <ServiceSection/>
+      <TestimonialSection/>
     </main>
   );
 }
