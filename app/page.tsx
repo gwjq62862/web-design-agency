@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import AboutSection from "@/components/sections/AboutSection";
 import AttributeSection from "@/components/sections/AttibuteSection";
+import BlogSection from "@/components/sections/BlogSection";
 import Hero from "@/components/sections/HeroSection";
 import ServiceSection from "@/components/sections/ServiceSection";
 import SliderSection from "@/components/sections/SliderSection";
@@ -21,6 +22,7 @@ export default function Home() {
       <VideoSection/>
       <ServiceSection/>
       <TestimonialSection/>
+      <BlogSection/>
     </main>
   );
 }
