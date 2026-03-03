@@ -4,13 +4,13 @@ import React from 'react'
 const FooterSection = () => {
   return (
     <footer className='relative px-5 lg:px-[80px] pt-[80px] pb-[40px] bg-[#0A0A0A] overflow-hidden'>
-      {/* Background Pattern */}
+    
       <div className="absolute inset-0 z-0 opacity-30">
         <Image src='/footer-bg.png' fill alt='footer bg' className='object-cover' />
       </div>
 
       <div className='relative z-10'>
-        {/* Top Row: Logo & Socials */}
+       
         <div className='flex flex-col md:flex-row justify-between items-center mb-[40px] gap-6'>
           <Image src="/footer-logo.png" alt="footer logo" width={220} height={50} />
           <div className='flex gap-4'>
@@ -22,10 +22,10 @@ const FooterSection = () => {
           </div>
         </div>
 
-        {/* Divider Line */}
+
         <div className='bg-gray/20 w-full h-px mb-[80px]'></div>
 
-        {/* Main Content Area */}
+       
         <div className='flex flex-col lg:flex-row justify-between gap-[60px]'>
           
           {/* Left Column: Email & Copyright */}
@@ -41,7 +41,7 @@ const FooterSection = () => {
             </span>
           </div>
 
-          {/* Right Column: Links & Subscribe */}
+    
           <div className='flex flex-col justify-between items-end'>
             {/* Nav Links Grid */}
             <div className='grid grid-cols-2 gap-x-[60px] gap-y-4 mb-[80px] text-right lg:text-left'>
@@ -57,7 +57,7 @@ const FooterSection = () => {
               </div>
             </div>
 
-            {/* Subscribe Box - Figma အတိုင်း အတိအကျ */}
+        
             <div className='relative flex w-full max-w-[400px] h-[60px] rounded-lg overflow-hidden border border-white/10'>
               <input 
                 type="email" 
