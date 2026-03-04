@@ -2,7 +2,7 @@ import React from 'react'
 
 const SliderSection = () => {
   return (
-    <section className='py-6 lg:py-[40px] bg-dark-bg overflow-hidden border-y border-gray/10'>
+    <section className='py-6 lg:py-[40px] bg-dark-bg overflow-hidden '>
    
       <div className='flex whitespace-nowrap overflow-hidden group'>
         <div className='flex animate-marquee shrink-0'>

@@ -4,10 +4,7 @@ import Button from "../ui/button"
 const AboutSection = () => {
   return (
     <section className='px-6 md:px-10 xl:px-[80px] py-[60px] lg:py-[100px] bg-dark-bg overflow-hidden'>
-      {/* Main Fix: 
-          1. Changed gap-[130px] to xl:gap-[130px] (only large screens)
-          2. Used gap-[40px] for smaller desktops/tablets
-      */}
+     
       <div className='flex flex-col lg:flex-row items-center justify-between gap-[40px] xl:gap-[130px] max-w-[1400px] mx-auto'>
 
         {/* Left Side: Image Section */}

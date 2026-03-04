@@ -21,7 +21,7 @@ const attributes = [
 
 const AttributeSection = () => {
   return (
-    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[60px] lg:py-[100px] bg-black'>
+    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[60px] lg:py-[100px] bg-dark-bg'>
     
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] lg:gap-[40px] justify-items-center max-w-[1400px] mx-auto'>
         {attributes.map((attr, index) => (

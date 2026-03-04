@@ -3,7 +3,7 @@ import React from 'react'
 
 const FooterSection = () => {
   return (
-    <footer className='relative px-6 md:px-10 lg:px-[80px] pt-[60px] lg:pt-[80px] pb-[40px] bg-[#0A0A0A] overflow-hidden'>
+    <footer className='relative px-6 md:px-10 lg:px-[80px] pt-[60px] lg:pt-[80px] pb-[40px] bg-dark-bg overflow-hidden'>
       
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0 opacity-20 lg:opacity-30">
