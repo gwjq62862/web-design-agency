@@ -9,54 +9,61 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Scroll logic for transparency switch
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock scroll when menu open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
   return (
-    <nav className={`fixed top-0 left-0 w-full z-100 transition-all duration-300 h-[90px] px-8 flex items-center justify-between
-      ${isOpen ? "bg-black" : scrolled ? "bg-black/95 backdrop-blur-sm" : "bg-black lg:bg-transparent"}
-    `}>
-      
-      <div className="z-50 shrink-0">
-        <Image src="/Logo.svg" width={62} height={20} alt="Logo" />
-      </div>
+    <>
+      {/* Main Nav */}
+      <nav className={`fixed top-0 left-0 w-full h-[90px] px-8 flex items-center justify-between transition-all duration-300 z-50
+        ${isOpen ? "bg-black" : scrolled ? "bg-black/95 backdrop-blur-sm" : "bg-black lg:bg-transparent"}
+      `}>
+        <div className="shrink-0">
+          <Image src="/Logo.svg" width={62} height={20} alt="Logo" />
+        </div>
+
+        {/* Desktop */}
+        <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-14">
+          {navItems.map((item) => (
+            <li key={item} className="text-[16px] font-semibold text-white cursor-pointer hover:text-primary transition-colors">
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        {/* Toggle */}
+        <button 
+          className="lg:hidden p-2 text-white relative z-50"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </nav>
 
     
-      <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-14">
+      <div className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 lg:hidden
+        ${isOpen ? "translate-y-0" : "-translate-y-full"}
+      `}>
         {navItems.map((item) => (
-          <li key={item} className="text-[16px] font-semibold cursor-pointer hover:text-primary transition-colors">
-            {item}
-          </li>
-        ))}
-      </ul>
-
-      {/* Mobile Menu Toggle */}
-      <button 
-        className="lg:hidden z-50 p-2 text-white"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-
-      {/* Mobile Sidebar Overlay */}
-      <div className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 lg:hidden ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
-        {navItems.map((item) => (
-          <li 
+          <button 
             key={item} 
-            className="list-none text-[24px] font-bold cursor-pointer hover:text-primary transition-colors"
+            className="text-[24px] font-bold text-white hover:text-primary transition-colors"
             onClick={() => setIsOpen(false)}
           >
             {item}
-          </li>
+          </button>
         ))}
       </div>
-    </nav>
+    </>
   );
 };
 
