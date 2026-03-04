@@ -24,7 +24,7 @@ const Navbar = () => {
     `}>
       
       <div className="z-50 shrink-0">
-        <Image src="/logo.svg" width={62} height={20} alt="Logo" />
+        <Image src="/Logo.svg" width={62} height={20} alt="Logo" />
       </div>
 
     
