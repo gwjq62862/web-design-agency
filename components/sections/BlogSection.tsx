@@ -1,7 +1,6 @@
 import React from 'react'
 import BlogCard from '../ui/BlogCard';
 
-
 const blogPosts = [
     {
         title: "Lorem ipsum dolor sit amet consectetur",
@@ -25,18 +24,20 @@ const blogPosts = [
 
 const BlogSection = () => {
     return (
-        <section className='py-[100px] px-5 lg:px-[80px] bg-dark-bg'>
-            <div className='flex flex-col items-center mb-[60px]'>
+        <section className='py-[60px] lg:py-[100px] px-6 md:px-10 lg:px-[80px] bg-dark-bg'>
+            <div className='flex flex-col items-center mb-[40px] lg:mb-[60px]'>
                 <div className='w-[8px] h-[8px] bg-primary rounded-full mb-[16px]'></div>
-                <span className='uppercase text-gray text-[14px] font-medium tracking-[2px] mb-[8px]'>
+                <span className='uppercase text-gray text-[12px] lg:text-[14px] font-medium tracking-[2px] mb-[8px]'>
                     Our Recent Posts
                 </span>
-                <h2 className='font-extrabold text-[40px] lg:text-[50px] max-w-[700px] text-white text-center leading-[1.2]'>
+              
+                <h2 className='font-extrabold text-[32px] md:text-[40px] lg:text-[50px] max-w-[700px] text-white text-center leading-[1.2]'>
                     Our Latest <span className='text-primary'>News & Articles</span> From The <span className='text-primary'>Blog</span>
                 </h2>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px]'>
+            
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[40px] max-w-[1400px] mx-auto justify-items-center'>
                 {blogPosts.map((post, index) => (
                     <BlogCard 
                         key={index}

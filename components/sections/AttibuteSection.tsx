@@ -1,7 +1,6 @@
 import React from 'react'
 import AttributeCard from '../ui/AttributeCard';
 
-
 const attributes = [
   {
     title: "Creative Agency",
@@ -22,15 +21,17 @@ const attributes = [
 
 const AttributeSection = () => {
   return (
-    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[80px] bg-dark-bg'>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] justify-items-center'>
+    <section className='lg:px-[80px] md:px-[40px] px-[20px] py-[60px] lg:py-[100px] bg-black'>
+    
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] lg:gap-[40px] justify-items-center max-w-[1400px] mx-auto'>
         {attributes.map((attr, index) => (
-          <AttributeCard
-            key={index}
-            title={attr.title}
-            image={attr.image}
-            icon={attr.icon}
-          />
+          <div key={index} className="w-full flex justify-center">
+            <AttributeCard
+              title={attr.title}
+              image={attr.image}
+              icon={attr.icon}
+            />
+          </div>
         ))}
       </div>
     </section>

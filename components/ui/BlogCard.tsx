@@ -12,7 +12,7 @@ const BlogCard = ({ title, image, date, category }: BlogCardProps) => {
     return (
         <div className='w-full max-w-[400px] h-full flex flex-col group cursor-pointer'>
             {/* Image Container */}
-            <div className='w-full h-[340px] mb-[24px] relative overflow-hidden'>
+            <div className='w-full aspect-4/3 mb-[24px] relative overflow-hidden'>
                 <Image 
                     src={image} 
                     fill 

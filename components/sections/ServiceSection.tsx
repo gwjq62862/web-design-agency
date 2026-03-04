@@ -1,7 +1,6 @@
 import React from 'react'
 import ServiceCard from '../ui/ServiceCard';
 
-
 const services = [
   {
     title: "Website Development",
@@ -27,23 +26,20 @@ const services = [
 
 const ServiceSection = () => {
   return (
-    <section className='py-[100px] px-5 lg:px-[80px] bg-dark-bg'>
-
-      <div className='flex flex-col items-center text-center mb-[60px]'>
-       
+    <section className='py-[60px] lg:py-[100px] px-6 md:px-10 lg:px-[80px] bg-dark-bg'>
+      
+      <div className='flex flex-col items-center text-center mb-[40px] lg:mb-[60px]'>
         <div className='w-[10px] h-[10px] bg-primary rounded-full mb-4' />
-        
-        <span className='text-[14px] font-medium text-gray uppercase tracking-[2px] mb-2'>
+        <span className='text-[12px] lg:text-[14px] font-medium text-gray uppercase tracking-[2px] mb-2'>
           What We’re Offering
         </span>
-        
-        <h2 className='font-extrabold text-[40px] lg:text-[50px] text-white max-w-[700px] leading-[1.2]'>
+        <h2 className='font-extrabold text-[32px] md:text-[40px] lg:text-[50px] text-white max-w-[700px] leading-[1.2]'>
           <span className='text-primary'>Services</span> We’re Providing To Our Customers
         </h2>
       </div>
 
-  
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center'>
+    
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-[1300px] mx-auto'>
         {services.map((service, index) => (
           <ServiceCard
             key={index}
